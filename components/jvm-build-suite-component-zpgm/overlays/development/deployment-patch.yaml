@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-zpgm
+  namespace: jvm-build-kkgc-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:436c99bd04163408bd5a2582e6ae23bc7e85284e6cad1e87cf0f2f2a35421aad
+        name: container-image
+        resources: {}
+status: {}
