@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: jvm-build-suite-component-zpgm
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: jvm-build-suite-component-zpgm
+    app.kubernetes.io/part-of: jvm-build-suite-application-cpff
+  name: jvm-build-suite-componentu8lw
+  namespace: jvm-build-kkgc-tenant
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: jvm-build-suite-component-zpgm
+    weight: 100
+status: {}
