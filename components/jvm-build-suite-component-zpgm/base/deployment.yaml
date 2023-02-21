@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-zpgm
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:b984bfa87cbe4483a9f0978bdf4581bf
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:436c99bd04163408bd5a2582e6ae23bc7e85284e6cad1e87cf0f2f2a35421aad
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
